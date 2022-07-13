@@ -46,10 +46,5 @@ public class Serie {
 	public String getCreador() {
 		return creador;
 	}
-
-	
-	
-
-	
-	
+		
 }
