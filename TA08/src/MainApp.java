@@ -12,6 +12,13 @@ public class MainApp {
 		System.out.println("Persona 2:\n"+persona2.getNombre()+" - "+persona2.getEdad()+" Años- "+persona2.getDni()+" - "+persona2.getSexo()+" - "+persona2.getPeso()+"kg - "+persona2.getAltura()+"m");
 		System.out.println("Persona 3:\n"+persona3.getNombre()+" - "+persona3.getEdad()+" Años- "+persona3.getDni()+" - "+persona3.getSexo()+" - "+persona3.getPeso()+"kg - "+persona3.getAltura()+"m");
 		
+		
+		Password pass1 = new Password();
+		Password pass2 = new Password(10);
+	
+		System.out.println("Contraseña1:\n"+pass1.getContrasena()+" lenght("+pass1.getLongitud()+")");
+		System.out.println("Contraseña2:\n"+pass2.getContrasena()+" lenght("+pass2.getLongitud()+")");
+	
 	}
 
 }
