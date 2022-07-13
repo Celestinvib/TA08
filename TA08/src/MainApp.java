@@ -27,6 +27,14 @@ public class MainApp {
 		System.out.println("Electrodoméstico2:\n"+nevera2.getPrecio()+"€ "+nevera2.getColor()+" -(Cosnumo) "+nevera2.getConsumoEnergetico()+" - "+nevera2.getPeso()+"kg");
 		System.out.println("Electrodoméstico3:\n"+nevera3.getPrecio()+"€ "+nevera3.getColor()+" -(Cosnumo) "+nevera3.getConsumoEnergetico()+" - "+nevera3.getPeso()+"kg");
 		
+		Serie serie1 = new Serie();
+		Serie serie2 = new Serie("The walking CSharps","Jose Marín");
+		Serie serie3 = new Serie("Resacón en Valencia",1,"Comedia","Felipe Gómez");
+		
+		System.out.println("\nSerie2:\n"+serie2.getTitulo()+" "+serie2.getTemporadas()+" T "+serie2.getGenero()+"  "+serie2.getCreador() +" Entregado:"+serie2.isEntregado());
+		System.out.println("\nSerie3:\n"+serie3.getTitulo()+" "+serie3.getTemporadas()+" T "+serie3.getGenero()+"  "+serie3.getCreador() +" Entregado:"+serie3.isEntregado());
+
+
 	}
 
 }
