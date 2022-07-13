@@ -13,15 +13,16 @@ public class Persona {
 
 	private double altura;
 
-		
+	private final String sexoDefecto = "H";	
+	
 	public Persona() {
 		this.nombre = "";
 		this.edad = 0;
-		this.sexo = "H";
+		this.sexo = sexoDefecto;
 		this.peso = 0;
-		this.altura = 0;
-		
+		this.altura = 0;		
 	}
+	
 	public Persona(String nombre, int edad, String sexo) {
 		this.nombre = nombre;
 		this.edad = edad;
