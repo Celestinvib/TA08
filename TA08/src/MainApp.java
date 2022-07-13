@@ -19,6 +19,14 @@ public class MainApp {
 		System.out.println("Contraseña1:\n"+pass1.getContrasena()+" lenght("+pass1.getLongitud()+")");
 		System.out.println("Contraseña2:\n"+pass2.getContrasena()+" lenght("+pass2.getLongitud()+")");
 	
+		Electrodomestico nevera1 = new Electrodomestico(499,8);
+		Electrodomestico nevera2 = new Electrodomestico(599,"morado",'S',9);
+		Electrodomestico nevera3 = new Electrodomestico(799,"gris",'C',7);
+
+		System.out.println("\nElectrodoméstico1:\n"+nevera1.getPrecio()+"€ "+nevera1.getColor()+" -(Cosnumo) "+nevera1.getConsumoEnergetico()+" - "+nevera1.getPeso()+"kg");
+		System.out.println("Electrodoméstico2:\n"+nevera2.getPrecio()+"€ "+nevera2.getColor()+" -(Cosnumo) "+nevera2.getConsumoEnergetico()+" - "+nevera2.getPeso()+"kg");
+		System.out.println("Electrodoméstico3:\n"+nevera3.getPrecio()+"€ "+nevera3.getColor()+" -(Cosnumo) "+nevera3.getConsumoEnergetico()+" - "+nevera3.getPeso()+"kg");
+		
 	}
 
 }
