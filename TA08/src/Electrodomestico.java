@@ -11,7 +11,7 @@ public class Electrodomestico {
 	
 	String notasConsumo = "ABCDEF";
 
-	String[] colores = {"blacno","nergo","rojo","azul","gris"};
+	String[] colores = {"blanco","negro","rojo","azul","gris"};
 
 	
 	protected double precio = precioBaseDefecto;
@@ -35,16 +35,16 @@ public class Electrodomestico {
 		this.precio = precio;
 		this.peso = peso;
 		
-		//Comprobación de que el color que ha introducido el usuario esta disponible
+		//Comprobación de que el color que ha introducido el usuario(sin importar si esta em mayúsculas o minúsculas) esta disponible
 		boolean colorAvailable = false;
 		
 		for (int i = 0; i < colores.length; i++) {
-			if(color.equals(colores[i])) {
+			if(color.toLowerCase().equals(colores[i])) {
 				colorAvailable = true;
 				break;
 			}
 		}
-		 
+		
 		if(colorAvailable) { //Si lo esta se le asigna el color sino se quedará con el color por defecto
 			this.color = color;
 		}
@@ -57,7 +57,7 @@ public class Electrodomestico {
 			}
 		}
 
-		if(colorAvailable) {
+		if(notaAvailable) {
 			this.consumoEnergetico = consumoEnergetico;
 		}
 		
